@@ -1,0 +1,10 @@
+{
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Palenight.tmTheme",
+	"font_face": "DejaVu Sans Mono",
+	"font_size": 17,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Material-Theme-Palenight.sublime-theme"
+}
