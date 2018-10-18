@@ -1,0 +1,36 @@
+# Git Branch Prompt
+git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+
+# Bash Prompt Custom
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\W\[\033[0;32m\]\$(git_branch)\[\033[m\]\$ "
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
+
+# Command History Config
+export HISTTIMEFORMAT="%Y/%m/%d %T "
+
+
+# GOPATH CONFIG
+export GOROOT='/usr/share/go'
+export GOPATH='/usr/local/golang'
+
+
+# Python Path Config
+export PYTHONPATH="/usr/local/bin/python:$PYTHONPATH"
+export PATH="$PATH:$PYTHONPATH/bin"
+
+
+# HTTP PROXY CONFIG
+#export http_proxy="http://127.0.0.1:8988/"
+#export https_proxy="http://127.0.0.1:8988/"
+
+
+# Custom Alias
+alias open-proxy="export http_proxy='http://127.0.0.1:8988/' && export https_proxy='http://127.0.0.1:8988/'"
+alias close-proxy="unset http_proxy https_proxy"
+alias pip3="python3 -m pip"
+alias pip="python2 -m pip"

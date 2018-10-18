@@ -1,0 +1,71 @@
+// 将按键绑定配置放入此文件中即可覆盖默认值
+[
+    {
+        "key": "cmd+e",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "-workbench.view.explorer"
+    },
+    {
+        "key": "cmd+r",
+        "command": "workbench.view.extension.outline"
+    },
+    {
+        "key": "cmd+y",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "home",
+        "command": "workbench.action.terminal.moveToLineStart",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+left",
+        "command": "-workbench.action.terminal.moveToLineStart",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "end",
+        "command": "workbench.action.terminal.moveToLineEnd",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+right",
+        "command": "-workbench.action.terminal.moveToLineEnd",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+up",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "ctrl+shift+left",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "alt+cmd+left",
+        "command": "-workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+shift+right",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "alt+cmd+right",
+        "command": "-workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+shift+2",
+        "command": "workbench.action.editorLayoutTwoColumns"
+    },
+    {
+        "key": "ctrl+shift+1",
+        "command": "workbench.action.editorLayoutSingle"
+    },
+    {
+        "key": "shift+alt+2",
+        "command": "workbench.action.editorLayoutTwoColumnsBottom"
+    }
+]
