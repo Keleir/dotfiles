@@ -1,0 +1,9 @@
+#!/bin/bash
+
+## Boot Script When Login
+
+# Shadowsocks
+sudo sslocal -c /opt/shadowsocks/shadow.json -d restart
+
+# Privoxy
+sudo privoxy /usr/local/etc/privoxy/config
