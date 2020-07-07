@@ -1,170 +1,173 @@
 {
-    // ================ Workbench Config ================
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "Dracula",
-    "workbench.sideBar.location": "left",
-    "workbench.statusBar.visible": false,
-    "workbench.activityBar.visible": false,
-    "workbench.editor.enablePreview": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.editor.enablePreviewFromQuickOpen": true,
+  // ================ Workbench Config ================
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Dracula",
+  "workbench.sideBar.location": "left",
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.visible": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "workbench.colorCustomizations": {
+    // this config try to hidden scrollbar
+    // "scrollbarSlider.background":"#9aa0",
+    // "scrollbarSlider.hoverBackground": "#ff00",
+    // "scrollbarSlider.activeBackground": "#f000",
+  },
 
-    // ================ Editior Config ================
-    // "editor.fontSize": 18,
-    "editor.fontSize": 19,
-    "editor.fontWeight": "normal",
-    // "editor.fontWeight": "500",
-    // 控制字体系列。
-    // "editor.fontFamily": "DejaVu Sans Mono",
-    // "editor.fontFamily": "Monaco",
-    // "editor.fontFamily": "mononoki",
-    // "editor.fontFamily": "Source Code Pro",
-    // "editor.fontFamily": "fira code",
-    // "editor.fontFamily": "Menlo",
-    "editor.fontFamily": "PT Mono",
-    "editor.minimap.enabled": false,
-    "editor.wordWrap": "on",
-    "editor.formatOnSave": false,
-    "editor.smoothScrolling": true,
-    // 控制编辑器应如何呈现当前行突出显示
-    // 可能为“无”、“装订线”、“线”和“全部”
-    "editor.renderLineHighlight": "none",
-    "editor.insertSpaces": true,
-    "editor.tabSize": 4,
-    "editor.detectIndentation": true,
-    "editor.renderWhitespace": "none",
-    "editor.suggestSelection": "first",
-    "editor.accessibilitySupport": "off",
-    "editor.renderControlCharacters": false,
+  // ================ Editior Config ================
+  // "editor.fontSize": 18,
+  "editor.fontSize": 19,
+  "editor.fontWeight": "normal",
+  // "editor.fontWeight": "500",
+  // 控制字体系列。
+  // "editor.fontFamily": "DejaVu Sans Mono",
+  // "editor.fontFamily": "Monaco",
+  // "editor.fontFamily": "mononoki",
+  // "editor.fontFamily": "Source Code Pro",
+  // "editor.fontFamily": "fira code",
+  // "editor.fontFamily": "Menlo",
+  "editor.fontFamily": "PT Mono",
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  // 控制编辑器应如何呈现当前行突出显示
+  // 可能为“无”、“装订线”、“线”和“全部”
+  "editor.renderLineHighlight": "none",
+  "editor.insertSpaces": true,
+  "editor.tabSize": 4,
+  "editor.wordWrap": "on",
+  "editor.smoothScrolling": true,
+  "editor.detectIndentation": true,
+  "editor.renderWhitespace": "none",
+  "editor.suggestSelection": "first",
+  // "editor.scrollbar.vertical": "hidden",
+  // "editor.scrollbar.horizontal": "hidden",
+  "editor.renderControlCharacters": false,
+  "editor.tokenColorCustomizations": null,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+
+  // ================ Terminal Config ================
+  "terminal.integrated.fontSize": 19,
+  "terminal.integrated.fontFamily": "DejaVu Sans Mono",
+  // "terminal.integrated.fontFamily": "PT Mono",
+  "terminal.integrated.lineHeight": 0,
+  "terminal.integrated.letterSpacing": 1,
+  "terminal.scrollbar.vertical": "hidden",
+  "terminal.integrated.fontWeight": "500",
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.shell.osx": "/bin/bash",
+  "terminal.integrated.drawBoldTextInBrightColors": false,
+
+  // 启用后，将在保存文件时剪裁尾随空格。
+  "files.trimTrailingWhitespace": true,
+  "window.openFilesInNewWindow": "on",
+  "git.confirmSync": false,
+  "git.ignoreMissingGitWarning": true,
+  // 控制问题预览是否应在打开文件时自动显示它们。
+  "problems.autoReveal": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  // 配置 glob 模式以决定文件或文件夹的显示和隐藏
+  "files.exclude": {
+    "**/.DS_Store": false,
+    "**/.hg": false,
+    "**/.svn": false,
+    "**/*.pyc": true,
+    "**/dist": true,
+    "dist": true,
+    "node_module": true
+  },
+
+  // 指向 PHP 可执行文件。
+  "php.validate.executablePath": "/usr/bin/php",
+  "phpfmt.psr2": false,
+  "phpfmt.passes": ["TightConcat"],
+  "phpfmt.exclude": ["AllmanStyleBraces"],
+  "files.autoSave": "afterDelay",
+
+  // Extra Tabsize Config
+  "[json]": {
+    "editor.tabSize": 2
+  },
+
+  // ================ Golang Config ================
+  "go.testFlags": ["-v"],
+  "go.lintTool": "golint",
+  "go.lintOnSave": "file",
+  "go.useLanguageServer": true,
+  // "go.useLanguageServer": false,
+  "go.formatTool": "goimports",
+  "go.gopath": "/usr/local/golang",
+  "go.languageServerFlags": ["-rpc.trace"],
+  "go.autocompleteUnimportedPackages": true,
+  "go.testEnvVars": {},
+  "[go]": {
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.fixAll.eslint": true
+      "source.organizeImports": true
     },
-    "editor.quickSuggestions": {
-        "strings": true
-    },
+    "editor.defaultFormatter": "golang.go"
+  },
 
-    // ================ Terminal Config ================
-    "terminal.integrated.fontSize": 19,
-    "terminal.integrated.fontFamily": "DejaVu Sans Mono",
-    // "terminal.integrated.fontFamily": "PT Mono",
-    "terminal.integrated.lineHeight": 0,
-    "terminal.integrated.letterSpacing": 1,
-    "terminal.integrated.fontWeight": "500",
-    "terminal.integrated.rendererType": "dom",
-    "terminal.integrated.shell.osx": "/bin/bash",
-    "terminal.integrated.drawBoldTextInBrightColors": false,
+  // ======== Python Static Synatx Lint ========
+  "python.linting.enabled": true,
+  "python.languageServer": "Pylance",
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.autoComplete.addBrackets": true,
+  "python.sortImports.path": "/usr/bin/isort",
+  "python.pythonPath": "/usr/local/bin/python3",
+  "python.linting.mypyArgs": ["--follow-imports=silent"],
+  "python.linting.pylintArgs": ["--max-line-length=100"],
+  "python.linting.pylintPath": "/usr/local/Python36/bin/pylint",
+  "python.linting.flake8Args": ["--max-line-length=100", "--ignore=E302"],
+  "python.formatting.autopep8Args": ["--max-line-length=100", "--ignore=E501"],
+  "python.autoComplete.extraPaths": ["/usr/local/Python36/lib/python3.6/site-packages/"],
 
-    // 启用后，将在保存文件时剪裁尾随空格。
-    "files.trimTrailingWhitespace": true,
-    "window.openFilesInNewWindow": "on",
-    "git.confirmSync": false,
-    "git.ignoreMissingGitWarning": true,
-    // 控制问题预览是否应在打开文件时自动显示它们。
-    "problems.autoReveal": true,
-    "diffEditor.ignoreTrimWhitespace": false,
-    // 配置 glob 模式以决定文件或文件夹的显示和隐藏
-    "files.exclude": {
-        "**/.svn": false,
-        "**/.hg": false,
-        "**/*.pyc": true,
-        "**/.DS_Store": false
-    },
+  "bracketPairColorizer.colorMode": "Independent",
+  "bracketPairColorizer.showVerticalScopeLine": false,
+  "bracketPairColorizer.showHorizontalScopeLine": false,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+  "typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+  "typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+  "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 
-    // 指向 PHP 可执行文件。
-    "php.validate.executablePath": "/usr/bin/php",
-    "phpfmt.psr2": false,
-    "phpfmt.passes": [
-        "TightConcat"
-    ],
-    "phpfmt.exclude": [
-        "AllmanStyleBraces"
-    ],
-    "files.autoSave": "afterDelay",
+  // ======================== ESLint Config ========================
+  "eslint.validate": ["vue", "html", "javascript", "javascriptreact"],
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "eslint.alwaysShowStatus": true,
+  "eslint.run": "onSave",
+  "eslint.options": {
+    "extensions": [".html", ".js", ".vue", ".jsx"]
+  },
 
-    // Extra Tabsize Config
-    "[json]": {
-        "editor.tabSize": 2
-    },
+  "vetur.format.options.tabSize": 2,
+  "vetur.format.defaultFormatter.html": "prettier",
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "semi": false,
+      "singleQuote": true,
+      "eslintIntegration": true
+    }
+  },
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "breadcrumbs.enabled": false,
 
-    // ================ Golang Config ================
-    "go.testFlags": ["-v"],
-    "go.lintTool": "golint",
-    "go.lintOnSave": "file",
-    "go.useLanguageServer": true,
-    "go.formatTool": "goimports",
-    "go.gopath": "/usr/local/golang",
-    "go.languageServerFlags": ["-rpc.trace"],
-    "go.autocompleteUnimportedPackages": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
 
-    // ======== Python Static Synatx Lint ========
-    "python.autoComplete.addBrackets": true,
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true,
-    "python.linting.flake8Enabled": true,
-    "python.sortImports.path": "/usr/bin/isort",
-    "python.linting.flake8Args": [
-        "--max-line-length=110",
-        // "--ignore=E501"
-        "--ignore=E302"
-    ],
-    "python.formatting.autopep8Args": [
-        "--max-line-length=100",
-        "--ignore=E501"
-    ],
-    "python.linting.pylintPath": "/usr/local/Python36/bin/pylint",
-    "python.linting.pylintArgs": [
-        "--max-line-length=100"
-    ],
-    "python.pythonPath": "/usr/local/bin/python3",
-    "python.jediEnabled": false,
-    "python.autoComplete.extraPaths": [
-        "/usr/local/Python36/lib/python3.6/site-packages/"
-    ],
-    "python.linting.mypyArgs": [
-        "--follow-imports=silent"
-    ],
-
-    "bracketPairColorizer.colorMode": "Independent",
-    "bracketPairColorizer.showVerticalScopeLine": false,
-    "bracketPairColorizer.showHorizontalScopeLine": false,
-    "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
-    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
-    "typescript.format.placeOpenBraceOnNewLineForFunctions": false,
-    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
-    // ======================== ESLint Config ========================
-    "eslint.validate": [ "vue", "html", "javascript", "javascriptreact"],
-    "eslint.workingDirectories": [ { "mode": "auto" } ],
-    "eslint.alwaysShowStatus": true,
-    "eslint.run": "onSave",
-    "eslint.options": {
-        "extensions": [ ".html", ".js", ".vue",  ".jsx", ]
-    },
-
-    "vetur.format.options.tabSize": 2,
-    "vetur.format.defaultFormatter.html": "prettier",
-    "vetur.format.defaultFormatterOptions": {
-        "prettier": {
-            "semi": false,
-            "singleQuote": true,
-            "eslintIntegration": true,
-        }
-    },
-    "prettier.semi": false,
-    "prettier.singleQuote": true,
-    "breadcrumbs.enabled": false,
-
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.tabSize": 2
-    },
-
-    "files.associations": {
-
-    },
-
+  "files.associations": {},
+  "html.format.contentUnformatted": ""
 }
+
